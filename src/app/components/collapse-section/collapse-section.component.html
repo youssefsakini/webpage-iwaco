@@ -1,0 +1,4 @@
+<div class="card p-2" *ngFor="let content of collapse">
+    <a class="collapsed ms-5 text-decoration-none" data-bs-toggle="collapse" [href]="'/#'+content.title"><h4>{{content.title}}</h4></a>
+    <app-collapse [collapse]="content"></app-collapse>
+</div>
